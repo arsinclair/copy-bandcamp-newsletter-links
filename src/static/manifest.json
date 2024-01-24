@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Bandcamp Newsletter Links Extractor",
+    "version": "1.0",
+    "description": "Extracts Bandcamp links from a Bandcamp newsletter. In order for this to work the email with the newsletter should be open in the active tab.",
+    "icons": {
+        "128": "icon.png"
+    },
+    "permissions": [
+        "activeTab",
+        "clipboardWrite",
+        "scripting"
+    ],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "action": {},
+    "background": {
+        "service_worker": "content.js"
+    }
+}

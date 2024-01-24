@@ -1,0 +1,17 @@
+{
+    "name": "copy-bandcamp-newsletter-links",
+    "version": "1.0.0",
+    "description": "Extracts Bandcamp links from a Bandcamp newsletter. In order for this to work the email with the newsletter should be open in the active tab.",
+    "type": "module",
+    "scripts": {
+        "build": "tsc && pnpm run copy-static-files",
+        "copy-static-files": "cp -rf src/static/* dist/"
+    },
+    "keywords": [],
+    "author": "Raman Sinclair <raman@arsinclair.dev>",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/chrome": "^0.0.258",
+        "typescript": "^5.3.3"
+    }
+}
