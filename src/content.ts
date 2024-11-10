@@ -1,5 +1,5 @@
 const injectedFunction = async () => {
-    const linkElements = document.querySelectorAll('a[href*=".bandcamp.com/album"]') as NodeListOf<HTMLAnchorElement>;
+    const linkElements = document.querySelectorAll('a[href*="/album/"], a[href*="/track/"]') as NodeListOf<HTMLAnchorElement>;
     const hrefs = Array.from(linkElements).map(link => link.href);
     const uniqueUrls = [...new Set(hrefs)];
     const bandcampLinks = uniqueUrls.join('\n');
